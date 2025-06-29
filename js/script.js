@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   items.forEach((item, index) => {
     setTimeout(() => {
-      item.classList.add("visible");
-    }, index * 400); // প্রতিটা item 0.4 সেকেন্ড পরপর আসবে
+      item.classList.add("fade-in");
+    }, index * 200); // প্রতিটা item 0.2 সেকেন্ড পরপর আসবে
   });
 });
