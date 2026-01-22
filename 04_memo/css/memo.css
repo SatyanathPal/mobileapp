@@ -79,7 +79,7 @@ h2 {
 label {
   position: absolute;
   left: 0.5em;
-  color: black;
+  color: whitesmoke;
   font-weight: 1000;
 }
 
@@ -218,5 +218,6 @@ table tr {
   /*カーソルをポインターの形（かたち）にする*/
 
 }
+
 
 
