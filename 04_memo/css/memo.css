@@ -21,7 +21,7 @@ body {
   background-blend-mode: soft-light;
   /* background-image: url(../img/backimg.JPG); */
   /* background-size: cover; */
-  background-image: url(../img/backimg.JPG);
+  background-image: url(../img/backimg.jpg);
   background-size: cover;
 }
 
@@ -216,4 +216,5 @@ table tr {
   background: rgb(26, 57, 212);
   cursor: pointer;
   /*カーソルをポインターの形（かたち）にする*/
+
 }
