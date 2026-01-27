@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <meta name="description" content="Calculator">
+
+    <link rel="icon" href="calc.jpg">
+
+    <!-- Font Awesome Twitter,Facebookなどのアイコン用フォント index.cssよりも前に定義...index.css high priority -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+
+    <link rel="stylesheet" href="css/calculator2.css">
+  </head>
+
+  <body>
+    <div class = "back">
+      <button id="btn99" class="back" type="button" onclick="history.back()">back</button>
+    </div>
+    <header>
+      <h1>Calculator</h1>
+    </header>
+
+    <div class="wrapper">
+      <p>入力した順番に計算をしていく計算機です。</p>
+      <div class="f-container">
+        <div class="f-box">
+          <div class="f-item" id="calcLog"></div> <!-- 1-->
+          <div class="f-item" id="result">0</div> <!-- 2-->
+          <div class="f-item btn" id="cancel">c</div> <!-- 3-->
+          <div class="f-item btn" id="div">÷</div> <!-- 4-->
+          <div class="f-item btn" id="num7">7</div> <!-- 5-->
+          <div class="f-item btn" id="num8">8</div> <!-- 6-->
+          <div class="f-item btn" id="num9">9</div> <!-- 7-->
+          <div class="f-item btn" id="mult">×</div> <!-- 8-->
+          <div class="f-item btn" id="num4">4</div> <!-- 9-->
+          <div class="f-item btn" id="num5">5</div> <!-- 10-->
+          <div class="f-item btn" id="num6">6</div> <!-- 11-->
+          <div class="f-item btn" id="sub">-</div> <!-- 12-->
+          <div class="f-item btn" id="num1">1</div> <!-- 13-->
+          <div class="f-item btn" id="num2">2</div> <!-- 14-->
+          <div class="f-item btn" id="num3">3</div> <!-- 15-->
+          <div class="f-item btn" id="add">+</div> <!-- 16-->
+          <div class="f-item btn" id="num0">0</div> <!-- 17-->
+          <div class="f-item btn" id="equal">=</div> <!-- 18-->
+          
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        <!-- Font Awesome Twitter,Facebookなどのアイコン用フォント -->
+        <!-- https://fontawesome.com/v4.7.0/icons/ でアイコンを探せるよ。 -->
+        <!-- https://saruwakakun.com/html-css/basic/font-awesome#san2 アイコンの設定いろいろ -->
+        <!-- アイコンの大きさ -->
+        <i class="fa fa-cog fa-spin animated font05" aria-hidden="true"></i>
+        <span class="mgn-01">copyright 2025 247141 S.PAL</span>
+        <i class="fa fa-bicycle faa-passing animated font06" aria-hidden="true"></i>
+      </p>
+    </footer>
+
+    <script src="js/calculator2.js"></script>
+  </body>
+</html>
