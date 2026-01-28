@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+/* ================================================= */
+/* Base                                              */
+/* ================================================= */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: "Courier New", "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    Meiryo,
+    monospace;
+  text-align: center;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  background-image: url(../img/backimg.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: #e5e7eb;
+}
+
+/* ================================================= */
+/* Common blocks                                     */
+/* ================================================= */
+header,
+main,
+footer,
+h1,
+h2,
+h3,
+p,
+div,
+table,
+.field,
+.btn-area,
+.filler01 {
+  margin: 0.5em 0em 0em 0em;
+  padding: 0.1em;
+}
+
+th,
+td {
+  line-height: 1.2em;
+  padding: 0.1em;
+}
+
+/* ================================================= */
+/* Headings                                          */
+/* ================================================= */
+h1 {
+  color: #22d3ee;
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.7);
+}
+
+h2 {
+  color: #a5f3fc;
+  font-weight: 700;
+}
+
+/* ================================================= */
+/* Fields                                            */
+/* ================================================= */
+.field01 {
+  position: relative;
+  height: 5em;
+}
+
+.field02 {
+  position: relative;
+  height: 10em;
+}
+
+/* ================================================= */
+/* Label                                             */
+/* ================================================= */
+label {
+  position: absolute;
+  left: 0.5em;
+  color: #67e8f9;
+  font-weight: 700;
+}
+
+label::after {
+  margin-left: 1em;
+  padding: 2px 8px;
+  border-radius: 2px;
+  font-size: 0.6em;
+  color: #020617;
+  background: #22d3ee;
+  box-shadow: 0 0 6px #22d3ee;
+  content: "必須";
+}
+
+/* ================================================= */
+/* Textarea                                          */
+/* ================================================= */
+textarea {
+  position: absolute;
+  top: 2em;
+  left: 3em;
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #22d3ee;
+  border-radius: 0.2em;
+  padding: 0.5em;
+  box-shadow: inset 0 0 8px rgba(34, 211, 238, 0.3);
+}
+
+textarea::placeholder {
+  color: #38bdf8;
+}
+
+/* ================================================= */
+/* Buttons                                           */
+/* ================================================= */
+.btn-area {
+  margin-left: 3em;
+  text-align: left;
+}
+
+#save,
+#select,
+#del,
+#allClear {
+  padding: 0.5em;
+  border-radius: 0.2em;
+  color: #020617;
+  font-size: 1em;
+  background: #22d3ee;
+  border: 1px solid #67e8f9;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.6);
+  font-weight: 700;
+}
+
+#save:hover,
+#select:hover,
+#del:hover,
+#allClear:hover {
+  background: #67e8f9;
+}
+
+/* ================================================= */
+/* Table                                             */
+/* ================================================= */
+table {
+  table-layout: fixed;
+  width: 80%;
+  margin-left: 3em;
+  border-collapse: collapse;
+  background: #020617;
+  border: 1px solid #22d3ee;
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.4);
+}
+
+table th {
+  background: #020617;
+  color: #22d3ee;
+  border-bottom: 1px solid #22d3ee;
+}
+
+table th,
+table td {
+  padding: 0.5em 0;
+  border: solid 0.1em #1e293b;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background: #020617cc;
+}
+
+table tr:hover {
+  background: #0f172a;
+}
+
+/* Width helpers */
+.width10 { width: 10%; }
+.width30 { width: 30%; }
+.width60 { width: 60%; }
+
+/* ================================================= */
+/* SweetAlert                                        */
+/* ================================================= */
+.swal2-title,
+.swal2-content {
+  color: #020617 !important;
+  font-weight: bold !important;
+}
+
+/* ================================================= */
+/* Responsive (same behavior)                         */
+/* ================================================= */
+@media screen and (max-width: 480px) {
+
+  label {
+    left: 0.1em;
+  }
+
+  textarea {
+    left: 0.1em;
+  }
+
+  .btn-area {
+    margin-left: 0.1em;
+  }
+
+  table {
+    width: 100%;
+    margin-left: 0.1em;
+  }
+}
+
+/* ================================================= */
+/* Back button                                       */
+/* ================================================= */
+.back {
+  text-align: left;
+}
+
+#btn99 {
+  padding: 0.5em;
+  border-radius: 0.2em;
+  color: #020617;
+  font-size: 1.5em;
+  background: #22d3ee;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.6);
+  cursor: pointer;
+}

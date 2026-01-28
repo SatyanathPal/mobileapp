@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+/* ================================================= */
+/* Base                                              */
+/* ================================================= */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: "Georgia", "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    Meiryo,
+    serif;
+  text-align: center;
+  background: linear-gradient(120deg, #f5f1e8, #e7e1d3);
+  background-image: url(../img/backimg.jpg);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  color: #3f3a2f;
+}
+
+/* ================================================= */
+/* Common blocks                                     */
+/* ================================================= */
+header,
+main,
+footer,
+h1,
+h2,
+h3,
+p,
+div,
+table,
+.field,
+.btn-area,
+.filler01 {
+  margin: 0.5em 0em 0em 0em;
+  padding: 0.1em;
+}
+
+th,
+td {
+  line-height: 1.2em;
+  padding: 0.1em;
+}
+
+/* ================================================= */
+/* Headings                                          */
+/* ================================================= */
+h1 {
+  color: #5a6b2f;   /* olive */
+  letter-spacing: 0.12em;
+}
+
+h2 {
+  color: #6b5e3c;   /* sand brown */
+  font-weight: 900;
+}
+
+/* ================================================= */
+/* Fields                                            */
+/* ================================================= */
+.field01 {
+  position: relative;
+  height: 5em;
+}
+
+.field02 {
+  position: relative;
+  height: 10em;
+}
+
+/* ================================================= */
+/* Label                                             */
+/* ================================================= */
+label {
+  position: absolute;
+  left: 0.5em;
+  color: #4b5320;
+  font-weight: 800;
+}
+
+label::after {
+  margin-left: 1em;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.6em;
+  color: #ffffff;
+  background: #8b5e34; /* earth brown */
+  content: "必須";
+}
+
+/* ================================================= */
+/* Textarea                                          */
+/* ================================================= */
+textarea {
+  position: absolute;
+  top: 2em;
+  left: 3em;
+  background: #faf8f2;
+  color: #3f3a2f;
+  border: 1px solid #a69b7c;
+  border-radius: 0.4em;
+  padding: 0.5em;
+}
+
+textarea::placeholder {
+  color: #8a7f66;
+}
+
+/* ================================================= */
+/* Buttons                                           */
+/* ================================================= */
+.btn-area {
+  margin-left: 3em;
+  text-align: left;
+}
+
+#save,
+#select,
+#del,
+#allClear {
+  padding: 0.5em;
+  border-radius: 0.4em;
+  color: #ffffff;
+  font-size: 1em;
+  background: #5a6b2f;   /* olive */
+  border: 1px solid #3f4a1f;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#save:hover,
+#select:hover,
+#del:hover,
+#allClear:hover {
+  background: #6f8136;
+}
+
+/* ================================================= */
+/* Table                                             */
+/* ================================================= */
+table {
+  table-layout: fixed;
+  width: 80%;
+  margin-left: 3em;
+  border-collapse: collapse;
+  background: #faf8f2;
+  border: 1px solid #b6ab8f;
+}
+
+table th {
+  background: #d6ccb2;
+  color: #3f3a2f;
+}
+
+table th,
+table td {
+  padding: 0.5em 0;
+  border: solid 0.1em #b6ab8f;
+  text-align: center;
+  color: #3f3a2f;
+}
+
+table tr:nth-child(even) {
+  background: #f1ecdf;
+}
+
+/* Width helpers */
+.width10 { width: 10%; }
+.width30 { width: 30%; }
+.width60 { width: 60%; }
+
+/* ================================================= */
+/* SweetAlert                                        */
+/* ================================================= */
+.swal2-title,
+.swal2-content {
+  color: #3f3a2f !important;
+  font-weight: bold !important;
+}
+
+/* ================================================= */
+/* Responsive (same behavior)                         */
+/* ================================================= */
+@media screen and (max-width: 480px) {
+
+  label {
+    left: 0.1em;
+  }
+
+  textarea {
+    left: 0.1em;
+  }
+
+  .btn-area {
+    margin-left: 0.1em;
+  }
+
+  table {
+    width: 100%;
+    margin-left: 0.1em;
+  }
+}
+
+/* ================================================= */
+/* Back button                                       */
+/* ================================================= */
+.back {
+  text-align: left;
+}
+
+#btn99 {
+  padding: 0.5em;
+  border-radius: 0.4em;
+  color: #ffffff;
+  font-size: 1.5em;
+  background: #8b5e34;
+  cursor: pointer;
+}
